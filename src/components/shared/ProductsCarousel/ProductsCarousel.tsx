@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import ProductCard from "../ProductCard/ProductCard";
 
 interface IProducts {
     title: string;
@@ -6,7 +6,7 @@ interface IProducts {
     limit?: number;
 }
 
-export default function Products(
+export default function ProductsCarousel(
     { title = "Featured Products", limit }: IProducts
 ) {
     const data = [
@@ -63,7 +63,7 @@ export default function Products(
             </div>
             <div className="flex justify-between w-full flex-wrap mt-2">
                 {data.map((product) => (
-                    <Card 
+                    <ProductCard 
                         key={product.id}
                         title={product.title}
                         oldPrice={product.oldPrice}

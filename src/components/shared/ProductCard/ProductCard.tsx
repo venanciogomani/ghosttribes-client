@@ -9,7 +9,7 @@ interface ICard {
     isNew?: boolean;
 }
 
-export default function Card({ title, img, price, oldPrice = 0, isNew }: ICard) {
+export default function ProductCard({ title, img, price, oldPrice = 0, isNew }: ICard) {
     const [isHovered, setIsHovered] = useState(false);
 
     return (
