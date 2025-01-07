@@ -39,7 +39,7 @@ export default function Footer() {
                 <div className="w-full dark:bg-slate-900">
                     <div className="flex justify-between mx-auto max-w-7xl py-2 lg:px-8">
                         <p className="text-sm/6">© {getFullYear()} Ghost Tribes. All rights reserved.</p>
-                        <img src="./img/payment.png" alt="payment" className="h-8 w-auto" />
+                        <img src="/img/payment.png" alt="payment" className="h-8 w-auto" />
                     </div>
                 </div>
             </div>

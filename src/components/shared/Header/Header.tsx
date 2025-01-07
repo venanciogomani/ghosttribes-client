@@ -38,7 +38,7 @@ export default function Header() {
             <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
                 <div className="flex md:flex-1">
                     <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-x-1.5 text-lg font-bold text-gray-900 dark:text-white">
-                        <img src="./img/logo-white.png" alt="Ghost Tribes" className="h-8 w-auto" />
+                        <img src="/img/logo-white.png" alt="Ghost Tribes" className="h-8 w-auto" />
                         <h2>Ghost Tribes</h2>
                     </Link>
                 </div>
