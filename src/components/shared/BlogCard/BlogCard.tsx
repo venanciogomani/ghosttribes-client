@@ -11,7 +11,7 @@ interface IBlog {
 export default function BlogCard({ title, img, date, category, excerpt }: IBlog) {
     return (
         <div 
-            className="blog-article w-1/4 flex flex-col p-2 border-2 cursor-pointer border-slate-900/0 hover:border-slate-900 transition ease-in-out duration-300"
+            className="blog-article w-full flex flex-col p-2 border-2 cursor-pointer border-slate-900/0 hover:border-slate-900 transition ease-in-out duration-300"
         >
             <div className="w-full h-60">
                 <img src={img} alt={title} className="object-cover w-full h-full flex-shrink-0" />

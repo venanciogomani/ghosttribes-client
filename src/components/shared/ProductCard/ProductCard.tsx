@@ -14,7 +14,7 @@ export default function ProductCard({ title, img, price, oldPrice = 0, isNew }: 
 
     return (
         <div 
-            className="product w-1/4 flex flex-col p-2 border-2 cursor-pointer border-slate-900/0 hover:border-slate-900 transition ease-in-out duration-300 relative"
+            className="product w-full flex flex-col p-2 border-2 cursor-pointer border-slate-900/0 hover:border-slate-900 transition ease-in-out duration-300 relative"
             onMouseOver={() => setIsHovered(true)}
             onMouseOut={() => setIsHovered(false)}
         >

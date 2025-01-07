@@ -7,9 +7,9 @@ export default function Home() {
     return (
         <div className="home flex flex-col items-center justify-center">
             <Hero />
-            <ProductsCarousel title="Trending Products" />
+            <ProductsCarousel title="Trending Products" limit={4} />
             <CategoryGrid />
-            <BlogCarousel title="Featured Articles" />
+            <BlogCarousel title="Featured Articles" limit={4} />
         </div>
     );
 }

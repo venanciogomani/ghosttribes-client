@@ -5,25 +5,62 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
-import Products from "./pages/Products/Products";
-import Default from "./components/screens/Default/Default";
+import Store from "./pages/Store/Store";
+import DefaultLayout from "./components/screens/DefaultLayout/DefaultLayout";
+import StoreLayout from "./components/screens/StoreLayout/StoreLayout";
 
 const router = createBrowserRouter([
   { 
     path: "/",
-    element: <Default />,
+    element: <DefaultLayout />,
     children: [
       {
         path: "/",
         element: <Home />
       },
       {
-        path: "/products/:id",
-        element: <Products />
+        path: "/about",
+        element: <div>About Page</div>
       },
       {
-        path: "/product/:id",
-        element: <Product />
+        path: "/contact",
+        element: <div>Contact Page</div>
+      }
+    ]
+  },
+  {
+    path: "/store",
+    element: <StoreLayout />,
+    children: [
+      {
+        path: "/store",
+        element: <Store />
+      },
+      {
+        path: "category",
+        element: <div>Category list</div>
+      },
+      {
+        path: "category/:slug",
+        element: <div>Products list</div>
+      }
+    ]
+  },
+  {
+    path: "/blog",
+    element: <div>Blog Page</div>,
+    children: [
+      {
+        path: "category",
+        element: <div>Blog Category</div>
+      },
+      {
+        path: "category/:slug",
+        element: <div>Blog Category</div>
+      },
+      {
+        path: "article/:slug",
+        element: <div>Blog Article</div>
       }
     ]
   }

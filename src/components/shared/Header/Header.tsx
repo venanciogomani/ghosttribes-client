@@ -110,9 +110,6 @@ export default function Header() {
                         </div>
                         <div className="hidden flex flex-col absolute w-52 -left-10 top-full z-10 mt-3 overflow-hidden rounded bg-white shadow-lg dropdown-menu dropdown-cart">
                             <div className="wishlist-item flex justify-between items-center p-1">
-                                <div className="w-1/2 flex justify-center items-center">
-                                    <img src="./img/books/book-1.jpg" alt="Book" className="w-12 h-12 object-cover" />
-                                </div>
                                 <div className="w-1/2 flex flex-col justify-center items-center text-slate-600">
                                     <span className="text-sm/6 font-semibold">Book Title</span>
                                     <span className="text-xs/6 font-semibold">$5</span>

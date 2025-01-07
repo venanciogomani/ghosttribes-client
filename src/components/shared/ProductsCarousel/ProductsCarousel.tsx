@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+import { products } from "../../../services/dummy";
 import ProductCard from "../ProductCard/ProductCard";
 
 interface IProducts {
@@ -9,49 +11,10 @@ interface IProducts {
 export default function ProductsCarousel(
     { title = "Featured Products", limit }: IProducts
 ) {
-    const data = [
-        {
-            id: 1,
-            img: [
-                "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600",
-                "https://images.pexels.com/photos/1163194/pexels-photo-1163194.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600"
-            ],
-            title: "Ghost Tribes: The Ghost of Africa",
-            isNew: true,
-            oldPrice: 29.99,
-            price: 19.99
-        },
-        {
-            id: 2,
-            img: [
-                "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600"
-            ],
-            title: "Ghost Tribes: A Tale of Three Kings",
-            isNew: false,
-            oldPrice: 0,
-            price: 19.99
-        },
-        {
-            id: 3,
-            img: [
-                "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600"
-            ],
-            title: "Ghost Tribes: The Council of Paramounts",
-            isNew: true,
-            oldPrice: 29.99,
-            price: 19.99
-        },
-        {
-            id: 4,
-            img: [
-                "https://images.pexels.com/photos/2065200/pexels-photo-2065200.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1600"
-            ],
-            title: "Ghost Tribes: Night of the Living Moon",
-            isNew: true,
-            oldPrice: 29.99,
-            price: 19.99
-        },
-    ];
+    const data = useMemo(() => {
+        return products;
+    }, []);
+    
     const pageLimit = limit || data.length;
     
     return (
@@ -61,7 +24,7 @@ export default function ProductsCarousel(
                 <span className="absolute left-2 bottom-0 w-[100px] h-[2px] bg-pink-500 flex items-center"></span>
                 <button className="btn py-1 px-2 bg-slate-700 text-white text-sm font-semibold">View All</button>
             </div>
-            <div className="flex justify-between w-full flex-wrap mt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full mt-4">
                 {data.map((product) => (
                     <ProductCard 
                         key={product.id}

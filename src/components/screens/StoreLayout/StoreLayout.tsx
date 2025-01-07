@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
-import Footer from "../../shared/Footer/Footer";
 import Header from "../../shared/Header/Header";
+import Footer from "../../shared/Footer/Footer";
 
-export default function Default() {
+export default function StoreLayout() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header />
