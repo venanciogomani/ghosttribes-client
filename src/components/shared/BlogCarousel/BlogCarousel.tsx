@@ -62,6 +62,7 @@ export default function BlogCarousel({ title = "Featured Articles", limit }: IBl
                         title={blog.title}
                         date={blog.date}
                         category={blog.category}
+                        excerpt={blog.excerpt}
                     />
                 )).slice(0, pageLimit)}
             </div>
