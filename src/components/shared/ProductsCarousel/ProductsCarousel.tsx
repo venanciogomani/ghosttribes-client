@@ -28,6 +28,7 @@ export default function ProductsCarousel(
                 {data.map((product) => (
                     <ProductCard 
                         key={product.id}
+                        id={product.id}
                         title={product.title}
                         oldPrice={product.oldPrice}
                         price={product.price}

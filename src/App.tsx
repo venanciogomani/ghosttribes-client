@@ -8,6 +8,7 @@ import Product from "./pages/Product/Product";
 import Store from "./pages/Store/Store";
 import DefaultLayout from "./components/screens/DefaultLayout/DefaultLayout";
 import StoreLayout from "./components/screens/StoreLayout/StoreLayout";
+import SingleProductLayout from "./components/screens/StoreLayout/SingleProductLayout";
 
 const router = createBrowserRouter([
   { 
@@ -41,22 +42,22 @@ const router = createBrowserRouter([
         element: <div>Category list</div>
       },
       {
-        path: "category/:slug",
+        path: "category/:name",
         element: <div>Products list</div>
       }
     ]
   },
   {
     path: "/store/product",
-    element: <StoreLayout />,
+    element: <SingleProductLayout />,
     children: [
       {
         path: "/store/product",
         element: <div>No product found</div>
       },
       {
-        path: "/store/product/:slug",
-        element: <div>Selected product</div>
+        path: "/store/product/:id",
+        element: <Product />
       }
     ]
   },

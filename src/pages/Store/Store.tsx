@@ -86,6 +86,7 @@ export default function Store() {
                         {data.map((product) => (
                             <ProductCard 
                                 key={product.id}
+                                id={product.id}
                                 title={product.title}
                                 oldPrice={product.oldPrice}
                                 price={product.price}

@@ -1,7 +1,9 @@
 import { FavoriteOutlined, ShoppingCartOutlined, VisibilityOutlined } from "@mui/icons-material";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface ICard {
+    id: number;
     title: string;
     img: string;
     price: number;
@@ -9,8 +11,9 @@ interface ICard {
     isNew?: boolean;
 }
 
-export default function ProductCard({ title, img, price, oldPrice = 0, isNew }: ICard) {
+export default function ProductCard({ id, title, img, price, oldPrice = 0, isNew }: ICard) {
     const [isHovered, setIsHovered] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <div 
@@ -26,7 +29,12 @@ export default function ProductCard({ title, img, price, oldPrice = 0, isNew }: 
                     {oldPrice > 0 && <p className="text-sm text-slate-600 line-through">${oldPrice}</p>}
                     <p className="text-sm font-semibold text-slate-700">${price}</p>
                 </div>
-                <h2 className="pt-2 font-semibold text-slate-800 hover:text-pink-600 transition ease-in-out duration-300">{title}</h2>
+                <h2 
+                    className="pt-2 font-semibold text-slate-800 hover:text-pink-600 transition ease-in-out duration-300"
+                    onClick={() => navigate(`/store/product/${id}`)}
+                >
+                    {title}
+                </h2>
             </div>
             {isNew && <div className="new-product absolute top-2 left-2 bg-pink-600 text-white text-xs font-semibold p-1">New</div>}
             {isHovered && 
