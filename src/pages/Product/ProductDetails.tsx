@@ -2,6 +2,9 @@ import { useState } from "react";
 import { 
     AddOutlined, 
     CelebrationOutlined, 
+    CheckCircleOutline, 
+    CloseOutlined, 
+    ErrorOutline, 
     Facebook, 
     FavoriteBorderOutlined, 
     Instagram, 
@@ -33,6 +36,7 @@ export function ProductDetails({
 }: IProductDetails) {
     const [quantity, setQuantity] = useState<number>(1);
     const [isAddedToCart, setIsAddedToCart] = useState<boolean>(false);
+    const [inputError, setInputError] = useState<string>("");
     
     function increment() {
         setQuantity(quantity + 1);
@@ -44,12 +48,38 @@ export function ProductDetails({
         }
     }
 
-    function handleAddToCart() {
+    function handleInputAddToCart(value: string) {
+        const numberValue = parseInt(value);
+        if (!isNaN(numberValue)) {
+            setQuantity(numberValue);
+        } else {
+            setQuantity(1);
+        }
+    }
+
+    function confirmInputChange() {
         setIsAddedToCart(true);
         setQuantity(1);
+        if (inputError) {
+            setInputError("");
+        }
         setTimeout(() => {
             setIsAddedToCart(false);
         }, 3000);
+    }
+
+    function cancelInputChange() {
+        setQuantity(1);
+        setInputError("")
+    }
+
+    function handleAddToCart() {
+        if (quantity > 100) {
+            const flagError = `That's one large number! Are you sure that this is the correct number of items you want?`;
+            setInputError(flagError);
+        } else {
+            confirmInputChange();
+        }
     }
 
     function handleShareTo(link: string) {
@@ -81,6 +111,28 @@ export function ProductDetails({
                     Product added to cart
                 </div>
             )}
+            {inputError && (
+                <div className="w-full max-w-[340px] py-1 px-2 border-2 border-red-600 text-sm mt-4 flex items-center justify-between">
+                    <div className="flex items-center justify-start text-red-600">
+                        <ErrorOutline fontSize="small" />
+                        <span className="ml-4 text-xs">{inputError}</span>
+                    </div>
+                    <div className="flex items-center justify-start px-1">
+                        <div 
+                            className="cursor-pointer mr-1 text-emerald-600"
+                            onClick={confirmInputChange}
+                        >
+                            <CheckCircleOutline fontSize="small"/>
+                        </div>
+                        <div 
+                            className="cursor-pointer text-red-600"
+                            onClick={cancelInputChange}
+                        >
+                            <CloseOutlined fontSize="small"/>
+                        </div>
+                    </div>
+                </div>
+            )}
             <div className="flex items-center justify-start mt-4">
                 <div className="flex items-center justify-between">
                     <div 
@@ -91,9 +143,9 @@ export function ProductDetails({
                     </div>
                     <input 
                         type="text"
-                        className="p-1 w-8 text-center border border-slate-300"
+                        className="p-1 min-w-8 max-w-16 text-center border border-slate-300"
                         value={quantity}
-                        onChange={(e) => setQuantity(Number(e.target.value))}
+                        onChange={(e) => handleInputAddToCart(e.target.value)}
                     />
                     <div 
                         className="p-1 border bg-gray-100 text-slate-700 font-semibold cursor-pointer"
