@@ -1,13 +1,12 @@
-import { Link, useParams } from "react-router-dom";
-import { useState } from "react";
+import { useParams } from "react-router-dom";
 import { useGetSingleProduct } from "../../hooks/get-single-product";
-import { ProductImage } from "./ProductImage";
-import { ProductDetails } from "./ProductDetails";
-import { ProductHeader } from "./ProductHeader";
-import { ProductError } from "./ProductError";
-import { NoContentFound } from "./NoContentFound";
-import { ProductInfo } from "./ProductInfo";
+import { ProductImage } from "../../components/SingleProduct/ProductImage";
+import { ProductDetails } from "../../components/SingleProduct/ProductDetails";
+import { ProductHeader } from "../../components/SingleProduct/ProductHeader";
 import ProductsCarousel from "../../components/shared/ProductsCarousel/ProductsCarousel";
+import { ProductError } from "../../components/SingleProduct/ProductError";
+import { NoContentFound } from "../../components/SingleProduct/NoContentFound";
+import { ProductInfo } from "../../components/SingleProduct/ProductInfo";
 
 export default function Product() {
     const { id } = useParams();
