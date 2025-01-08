@@ -1,4 +1,4 @@
-import { formatDate } from "../../../models/formatDate";
+import { formatDate } from "../../../utils/formatDate";
 
 interface IBlog {
     title: string;

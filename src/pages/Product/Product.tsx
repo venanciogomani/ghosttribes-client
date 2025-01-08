@@ -43,6 +43,9 @@ export default function Product() {
                         title={data.title}
                         price={data.price}
                         oldPrice={data.oldPrice}
+                        excerpt={data.excerpt}
+                        category={data.category}
+                        tag={data.tag}
                     />
                 </div>
                 
@@ -96,7 +99,9 @@ export default function Product() {
                         </div>
                     </div>
                     {selectedTab === Tab.Description && (
-                        <div className="mt-4">Description</div>
+                        <div className="mt-4">
+                            {data.description || ""}
+                        </div>
                     ) || selectedTab === Tab.Specifications && (
                         <div className="mt-4">Specifications</div>
                     ) || selectedTab === Tab.Reviews && (

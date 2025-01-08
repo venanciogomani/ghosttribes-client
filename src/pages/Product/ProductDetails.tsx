@@ -12,17 +12,24 @@ import {
     Twitter, 
     VisibilityOutlined 
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 interface IProductDetails {
     title: string;
     price: number;
     oldPrice: number;
+    excerpt?: string;
+    category: string;
+    tag: string[];
 }
 
 export function ProductDetails({
     title,
     price,
-    oldPrice
+    oldPrice,
+    excerpt,
+    category,
+    tag
 }: IProductDetails) {
     const [quantity, setQuantity] = useState<number>(1);
     const [isAddedToCart, setIsAddedToCart] = useState<boolean>(false);
@@ -58,56 +65,15 @@ export function ProductDetails({
     return (
         <div className="w-full flex flex-col items-start justify-start px-2">
             <h1 className="text-2xl font-semibold">{title}</h1>
-            <p className="text-sm font-light my-2 line-clamp-4 overflow-hidden text-ellipsis">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <div className="flex justify-between items-center">
-                <div className="flex items-center justify-start">
-                    <div className="flex items-center justify-start">
-                        {Array.from({ length: 5 }).map((_, index) => (
-                            <StarBorderOutlined key={index} fontSize="small" className="text-yellow-400 cursor-pointer" />
-                        ))}
-                    </div>
-                    <span 
-                        className="text-pink-600 hover:text-pink-800 transition duration-300 ease-in-out text-sm underline 
-                        ml-2 cursor-pointer"
-                    >
-                        62 reviews
-                    </span>
-                </div>
-                <div className="flex items-center justify-start ml-4">
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on Facebook"
-                        onClick={() => handleShareTo("facebook")}
-                    >
-                        <Facebook fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on X"
-                        onClick={() => handleShareTo("twitter")}
-                    >
-                        <Twitter fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on Instagram"
-                        onClick={() => handleShareTo("instagram")}
-                    >
-                        <Instagram fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share by email"
-                        onClick={handleShareByMail}
-                    >
-                        <MailOutline fontSize="small" />
-                    </div>
-                </div>
-            </div>
+            {excerpt && (
+                <p className="text-sm font-light my-2 line-clamp-4 overflow-hidden text-ellipsis">
+                    {excerpt}
+                </p>
+            )}
             <div className="flex items-center justify-start">
-                <span className="line-through text-slate-500">${oldPrice}</span>
+                {oldPrice > 0 && (
+                    <span className="line-through text-slate-500">${oldPrice}</span>
+                )}
                 <span className="text-xl font-semibold text-pink-600 ml-2">${price}</span>
             </div>
             {isAddedToCart && (
@@ -169,6 +135,76 @@ export function ProductDetails({
                     <span className="ml-2">Compare</span>
                 </div>
             </div>
+            <div className="flex justify-between items-center py-2 mt-4 border-t-2">
+                <div className="flex items-center justify-start">
+                    <div className="flex items-center justify-start">
+                        {Array.from({ length: 5 }).map((_, index) => (
+                            <StarBorderOutlined key={index} fontSize="small" className="text-yellow-400 cursor-pointer" />
+                        ))}
+                    </div>
+                    <span 
+                        className="text-pink-600 hover:text-pink-800 transition duration-300 ease-in-out text-sm underline 
+                        ml-2 cursor-pointer"
+                    >
+                        62 reviews
+                    </span>
+                </div>
+                <div className="flex items-center justify-start ml-4">
+                    <div 
+                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
+                        title="Share on Facebook"
+                        onClick={() => handleShareTo("facebook")}
+                    >
+                        <Facebook fontSize="small" />
+                    </div>
+                    <div 
+                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
+                        title="Share on X"
+                        onClick={() => handleShareTo("twitter")}
+                    >
+                        <Twitter fontSize="small" />
+                    </div>
+                    <div 
+                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
+                        title="Share on Instagram"
+                        onClick={() => handleShareTo("instagram")}
+                    >
+                        <Instagram fontSize="small" />
+                    </div>
+                    <div 
+                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
+                        title="Share by email"
+                        onClick={handleShareByMail}
+                    >
+                        <MailOutline fontSize="small" />
+                    </div>
+                </div>
+            </div>
+            <div className="flex items-center justify-start py-2 border-t-2 w-full">
+                <span className="py-1 mr-2 text-xs text-slate-600 w-16">Category:</span>
+                <Link 
+                    to={`/store/category/${category.toLowerCase()}`}
+                    className="py-1 px-2 mx-1 border-2 border-pink-600 text-xs text-pink-600 cursor-pointer"
+                >
+                    {category}
+                </Link>
+            </div>
+            {Boolean(tag.length) && (
+                <div className="flex items-center justify-start py-2 border-t">
+                    <span className="py-1 mr-2 text-xs text-slate-600 w-16">Tags:</span>
+                    {tag.map((name, index) => {
+                        return (
+                            <Link
+                                key={index} 
+                                to={`/store/tag/${name}`}
+                                className="py-1 px-2 mx-1 border-2 border-pink-600 text-xs text-pink-600 cursor-pointer"
+                            >
+                                {name}
+                            </Link>
+                        )
+                    })}
+                </div>
+            )}
         </div>
     )
 }
