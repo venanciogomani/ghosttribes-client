@@ -102,7 +102,7 @@ export function ProductDetails({
             )}
             <div className="flex items-center justify-start">
                 {oldPrice > 0 && (
-                    <span className="line-through text-slate-500">${oldPrice}</span>
+                    <span className="line-through text-yellow-600">${oldPrice}</span>
                 )}
                 <span className="text-xl font-semibold text-pink-600 ml-2">${price}</span>
             </div>
@@ -187,9 +187,10 @@ export function ProductDetails({
                     <span className="ml-2">Compare</span>
                 </div>
             </div>
-            <div className="flex justify-between items-center py-2 mt-4 border-t-2">
-                <div className="flex items-center justify-start">
+            <div className="flex flex-col justify-start items-start py-2 mt-4 border-t-2">
+                <div className="flex items-center justify-start px-1">
                     <div className="flex items-center justify-start">
+                        <span className="font-semibold text-slate-600 mr-1">4.8</span>
                         {Array.from({ length: 5 }).map((_, index) => (
                             <StarBorderOutlined key={index} fontSize="small" className="text-yellow-400 cursor-pointer" />
                         ))}
@@ -201,9 +202,9 @@ export function ProductDetails({
                         62 reviews
                     </span>
                 </div>
-                <div className="flex items-center justify-start ml-4">
+                <div className="flex items-center justify-start mt-2">
                     <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
+                        className="p-1 mr-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
                         title="Share on Facebook"
                         onClick={() => handleShareTo("facebook")}
                     >
