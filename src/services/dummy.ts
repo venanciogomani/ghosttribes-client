@@ -10,6 +10,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -26,6 +27,7 @@ export const products = [
         oldPrice: 0,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -42,6 +44,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -58,6 +61,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -74,6 +78,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -90,6 +95,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -106,6 +112,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -122,6 +129,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -139,6 +147,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -155,6 +164,7 @@ export const products = [
         oldPrice: 0,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -171,6 +181,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -187,6 +198,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -203,6 +215,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -219,6 +232,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -235,6 +249,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -251,6 +266,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -268,6 +284,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -284,6 +301,7 @@ export const products = [
         oldPrice: 0,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -300,6 +318,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -316,6 +335,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -332,6 +352,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -348,6 +369,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -364,6 +386,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],
@@ -380,6 +403,7 @@ export const products = [
         oldPrice: 29.99,
         price: 19.99,
         category: "Book",
+        categoryId: 1,
         tag: [
             "book", "novel", "digital"
         ],

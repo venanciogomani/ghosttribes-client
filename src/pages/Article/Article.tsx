@@ -7,6 +7,7 @@ import { ArticleHeader } from "./ArticleHeader";
 import { RelatedArticles } from "../../components/SingleBlogArticle/RelatedArticles";
 import ShareOn from "../../components/shared/ShareOn/ShareOn";
 import { CommentsSection } from "../../components/SingleBlogArticle/CommentsSection";
+import { ProductPlacement } from "../../components/SingleBlogArticle/ProductPlacement";
 
 export default function Article() {
     const navigate = useNavigate();
@@ -84,9 +85,7 @@ export default function Article() {
                         <RelatedArticles id={data.id} />
                         <CommentsSection comments={data.comments} />
                     </div>
-                    <div className="hidden md:flex w-1/5 p-2 border-2 h-96">
-                        Product placement
-                    </div>
+                    <ProductPlacement />
                 </div>
             </div>
         </div>
