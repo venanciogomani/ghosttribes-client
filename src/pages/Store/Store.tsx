@@ -1,8 +1,7 @@
 import { ArrowForwardOutlined, KeyboardArrowDownOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import ProductCard from "../../components/shared/ProductCard/ProductCard";
-import { useMemo, useState } from "react";
-import { products } from "../../services/dummy";
+import { useState } from "react";
 import { useGetProducts } from "../../hooks/use-get-products";
 
 export default function Store() {

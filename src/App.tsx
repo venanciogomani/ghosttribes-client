@@ -13,6 +13,7 @@ import Store from "./pages/Store/Store";
 import BlogLayout from "./components/screens/BlogLayout/BlogLayout";
 import { BlogArticleLayout } from "./components/screens/BlogLayout/BlogArticleLayout";
 import Article from "./pages/Article/Article";
+import NotFound from "./pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
   { 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <div>Contact Page</div>
+      },
+      {
+        path: "*",
+        element: <NotFound />
       }
     ]
   },
