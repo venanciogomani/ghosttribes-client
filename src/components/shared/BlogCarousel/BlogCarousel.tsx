@@ -26,6 +26,7 @@ export default function BlogCarousel({ title = "Featured Articles", limit }: IBl
                 {data.map((blog) => (
                     <BlogCard 
                         key={blog.id}
+                        id={blog.id}
                         img={blog.img}
                         title={blog.title}
                         date={blog.date}

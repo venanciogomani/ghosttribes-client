@@ -3,12 +3,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Home from "./pages/Home/Home";
-import Product from "./pages/Product/Product";
-import Store from "./pages/Store/Store";
 import DefaultLayout from "./components/screens/DefaultLayout/DefaultLayout";
 import StoreLayout from "./components/screens/StoreLayout/StoreLayout";
 import SingleProductLayout from "./components/screens/StoreLayout/SingleProductLayout";
+import Home from "./pages/Home/Home";
+import Blog from "./pages/Blog/Blog";
+import Product from "./pages/Product/Product";
+import Store from "./pages/Store/Store";
+import BlogLayout from "./components/screens/BlogLayout/BlogLayout";
+import { BlogArticleLayout } from "./components/screens/BlogLayout/BlogArticleLayout";
+import Article from "./pages/Article/Article";
 
 const router = createBrowserRouter([
   { 
@@ -44,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "category/:name",
         element: <div>Products list</div>
+      },
+      {
+        path: "tag/:name",
+        element: <div>Products list</div>
       }
     ]
   },
@@ -63,23 +71,37 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <div>Blog Page</div>,
+    element: <BlogLayout />,
     children: [
       {
         path: "/blog",
+        element: <Blog />
+      },
+      {
+        path: "/blog/category",
         element: <div>All articles</div>
       },
       {
-        path: "blog/category",
-        element: <div>All articles</div>
-      },
-      {
-        path: "blog/category/:slug",
+        path: "/blog/category/:id",
         element: <div>Blog Category</div>
       },
       {
-        path: "article/:slug",
-        element: <div>Blog Article</div>
+        path: "/blog/tag/:id",
+        element: <div>Blog Tag</div>
+      }
+    ]
+  },
+  {
+    path: "/blog/article",
+    element: <BlogArticleLayout />,
+    children: [
+      {
+        path: "/blog/article",
+        element: <div>No articles found</div>
+      },
+      {
+        path: "/blog/article/:id",
+        element: <Article />
       }
     ]
   }

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useGetSingleProduct } from "../../hooks/get-single-product";
+import { useGetSingleProduct } from "../../hooks/use-get-single-product";
 import { ProductImage } from "../../components/SingleProduct/ProductImage";
 import { ProductDetails } from "../../components/SingleProduct/ProductDetails";
 import { ProductHeader } from "../../components/SingleProduct/ProductHeader";

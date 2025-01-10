@@ -396,7 +396,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 3",
+        categoryId: 3,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 2,
@@ -405,7 +500,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 3,
@@ -414,7 +514,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 4,
@@ -423,7 +618,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 5,
@@ -432,7 +722,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 6,
@@ -441,7 +736,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 7,
@@ -450,7 +750,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 8,
@@ -459,7 +854,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 9,
@@ -468,7 +868,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 10,
@@ -477,7 +972,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 11,
@@ -486,7 +986,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 3",
+        categoryId: 3,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 12,
@@ -495,7 +1000,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 3",
+        categoryId: 3,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 13,
@@ -504,7 +1014,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 14,
@@ -513,7 +1118,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 15,
@@ -522,7 +1132,102 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ],
+        comments: [
+            {
+                id: 1,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 2,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 3,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+            {
+                id: 4,
+                author: "John Doe",
+                message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                replies: [
+                    {
+                        id: 1,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 2,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    },
+                    {
+                        id: 3,
+                        author: "Cadle Gomani",
+                        message: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+                    }
+                ]
+            },
+        ]
     },
     {
         id: 16,
@@ -531,7 +1236,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 17,
@@ -540,7 +1250,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 3",
+        categoryId: 3,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 18,
@@ -549,7 +1264,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 19,
@@ -558,7 +1278,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 20,
@@ -567,7 +1292,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 21,
@@ -576,7 +1306,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 4"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 22,
@@ -585,7 +1320,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 1",
+        categoryId: 1,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 23,
@@ -594,7 +1334,12 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 2"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 2",
+        categoryId: 2,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
     {
         id: 24,
@@ -603,6 +1348,11 @@ export const articles = [
         author: "Venancio Gomani",
         date: "2025-01-01",
         excerpt: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-        category: "Category 1"
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        category: "Category 4",
+        categoryId: 4,
+        tags: [
+            "Books", "Novel", "Fantasy"
+        ]
     },
 ];

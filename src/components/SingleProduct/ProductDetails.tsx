@@ -5,17 +5,14 @@ import {
     CheckCircleOutline, 
     CloseOutlined, 
     ErrorOutline, 
-    Facebook, 
     FavoriteBorderOutlined, 
-    Instagram, 
-    MailOutline, 
     RemoveOutlined, 
     ShoppingCartOutlined, 
     StarBorderOutlined, 
-    Twitter, 
     VisibilityOutlined 
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import ShareOn from "../shared/ShareOn/ShareOn";
 
 interface IProductDetails {
     title: string;
@@ -80,16 +77,6 @@ export function ProductDetails({
         } else {
             confirmInputChange();
         }
-    }
-
-    function handleShareTo(link: string) {
-        const url = `https://www.${link}.com/share?url=${window.location.href}`;
-        window.open(url, "_blank");
-    }
-
-    function handleShareByMail() {
-        const url = `mailto:?subject=Check out this product&body=${window.location.href}`;
-        window.open(url, "_blank");
     }
     
     return (
@@ -202,36 +189,7 @@ export function ProductDetails({
                         62 reviews
                     </span>
                 </div>
-                <div className="flex items-center justify-start mt-2">
-                    <div 
-                        className="p-1 mr-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on Facebook"
-                        onClick={() => handleShareTo("facebook")}
-                    >
-                        <Facebook fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on X"
-                        onClick={() => handleShareTo("twitter")}
-                    >
-                        <Twitter fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share on Instagram"
-                        onClick={() => handleShareTo("instagram")}
-                    >
-                        <Instagram fontSize="small" />
-                    </div>
-                    <div 
-                        className="p-1 mx-1 cursor-pointer text-slate-900 hover:text-pink-600 transition duration-300 ease-in-out"
-                        title="Share by email"
-                        onClick={handleShareByMail}
-                    >
-                        <MailOutline fontSize="small" />
-                    </div>
-                </div>
+                <ShareOn />
             </div>
             <div className="flex items-center justify-start py-2 border-t-2 w-full">
                 <span className="py-1 mr-2 text-xs text-slate-600 w-16">Category:</span>
