@@ -77,7 +77,7 @@ export default function Article() {
                         <div className="flex justify-between items-center border-b-2">
                             <div className="flex items-center">
                                 <ModeCommentOutlined fontSize="small" className="text-slate-600 mr-2" />
-                                <span className="text-sm text-slate-600">{data.comments?.length} comments</span>
+                                <span className="text-sm text-slate-600">{data.comments?.length || 0} comments</span>
                             </div>
                             <ShareOn />
                         </div>
