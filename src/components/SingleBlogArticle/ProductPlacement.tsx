@@ -10,7 +10,7 @@ export function ProductPlacement({
     tagIds
 }: IProductPlacement) {
     const tagId = tagIds ? tagIds[0] : undefined;
-    const { data, error } = useGetProducts(1, 3, categoryId, tagId);
+    const { data, error } = useGetProducts(4, categoryId, tagId);
 
     if (!data || data.length === 0) return null;
 

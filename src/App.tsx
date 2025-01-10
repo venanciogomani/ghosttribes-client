@@ -46,12 +46,12 @@ const router = createBrowserRouter([
         element: <div>Category list</div>
       },
       {
-        path: "category/:name",
-        element: <div>Products list</div>
+        path: "/store/category/:id",
+        element: <Store />
       },
       {
         path: "tag/:name",
-        element: <div>Products list</div>
+        element: <Store />
       }
     ]
   },
@@ -79,15 +79,15 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog/category",
-        element: <div>All articles</div>
+        element: <Blog />
       },
       {
         path: "/blog/category/:id",
-        element: <div>Blog Category</div>
+        element: <Blog />
       },
       {
         path: "/blog/tag/:id",
-        element: <div>Blog Tag</div>
+        element: <Blog />
       }
     ]
   },

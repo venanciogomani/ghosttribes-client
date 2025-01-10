@@ -1,12 +1,13 @@
+import { useState } from "react";
 import { ProductDto } from "../models/product";
 import { products } from "../services/dummy";
 
 export function useGetProducts(
-    page: number = 1,
-    pageSize: number = 12,
+    pageLimit = 12,
     categoryId?: number, 
     tagId?: string,
 ) {
+    const [page, setPage] = useState(pageLimit);
     const filteredProducts = products.filter(product => {
         // TODO: handle pagination on server-side once api is implemented
         if (categoryId && tagId) {
@@ -19,12 +20,11 @@ export function useGetProducts(
         return true;
     });
     
-    const startIndex = (page - 1) * pageSize;
-    const endIndex = startIndex + pageSize;
-    const paginatedProducts = filteredProducts.slice(startIndex, endIndex);
+    const paginatedProducts = filteredProducts.slice(0, page);
     const data = mapToProductsDto(paginatedProducts);
+    const loadMore = page < filteredProducts.length;
 
-    return { data, error: null };
+    return { data, error: null, page, setPage, loadMore };
 }
 
 function mapToProductsDto(data: Array<any>): ProductDto[] {

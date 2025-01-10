@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ProductCard from "../../components/shared/ProductCard/ProductCard";
 import { useMemo, useState } from "react";
 import { products } from "../../services/dummy";
+import { useGetProducts } from "../../hooks/use-get-products";
 
 export default function Store() {
-    const [page, setPage] = useState(8);
     const [sortBy, setSortBy] = useState("");
     const sortOptions: { [key: string]: string } = {
         newest: "Newest",
@@ -13,9 +13,7 @@ export default function Store() {
         priceLowToHigh: "Price (low to high)",
         rating: "Rating"
     }
-    const data = useMemo(() => {
-        return products;
-    }, []);
+    const { data, page, setPage, loadMore } = useGetProducts();
 
     function toggleSortBy() {
         const dropdownMenu = document.querySelector(".dropdown-sort-by");
@@ -95,7 +93,7 @@ export default function Store() {
                             />
                         )).slice(0, page)}
                     </div>
-                    {page < data.length && (
+                    {loadMore && (
                         <div 
                             className="border-2 border-slate-600 hover:border-pink-600 
                                 py-2 px-4 text-sm transition duration-300 ease-in-out cursor-pointer flex items-center justify-between mt-4"

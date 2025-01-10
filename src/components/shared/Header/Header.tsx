@@ -53,45 +53,55 @@ export default function Header() {
                 <div className="hidden md:flex md:gap-x-6 lg:gap-x-12">
                     {/* Books menu */}
                     <div className="relative">
-                        <button type="button" className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white" aria-expanded="false" onClick={() => toggleDropdown("dropdown-books")}>
+                        <button 
+                            type="button" 
+                            className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white" 
+                            aria-expanded="false" 
+                            onClick={() => toggleDropdown("dropdown-books")}
+                        >
                             Store
                             <KeyboardArrowDownOutlined className="size-5 flex-none text-gray-400" />
                         </button>
                         {/* Dropdown menu */}
                         <div className="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded bg-white shadow-lg dropdown-menu dropdown-books">
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/books" className="block font-semibold text-white dark:text-gray-900">Books</Link>
+                                <Link to="/store/category/1" className="block font-semibold text-white dark:text-gray-900">Books</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/games" className="block font-semibold text-white dark:text-gray-900">Games</Link>
+                                <Link to="/store/category/2" className="block font-semibold text-white dark:text-gray-900">Games</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/fashion" className="block font-semibold text-white dark:text-gray-900">Fashion</Link>
+                                <Link to="/store/category/3" className="block font-semibold text-white dark:text-gray-900">Fashion</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/merchandise" className="block font-semibold text-white dark:text-gray-900">Merchandise</Link>
+                                <Link to="/store/category/4" className="block font-semibold text-white dark:text-gray-900">Merchandise</Link>
                             </div>
                         </div>
                     </div>
                     {/* Blog menu */}
                     <div className="relative">
-                        <button type="button" className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white" aria-expanded="false" onClick={() => toggleDropdown("dropdown-blog")}>
+                        <button 
+                            type="button" 
+                            className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900 dark:text-white" 
+                            aria-expanded="false" 
+                            onClick={() => toggleDropdown("dropdown-blog")}
+                        >
                             Blog
                             <KeyboardArrowDownOutlined className="size-5 flex-none text-gray-400" />
                         </button>
                         {/* Dropdown menu */}
                         <div className="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded bg-white shadow-lg dropdown-menu dropdown-blog">
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/history" className="block font-semibold text-white dark:text-gray-900">History</Link>
+                                <Link to="/blog/category/1" className="block font-semibold text-white dark:text-gray-900">History</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/technology" className="block font-semibold text-white dark:text-gray-900">Technology</Link>
+                                <Link to="/blog/category/2" className="block font-semibold text-white dark:text-gray-900">Technology</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/art-and-literature" className="block font-semibold text-white dark:text-gray-900">Art & Literature</Link>
+                                <Link to="/blog/category/3" className="block font-semibold text-white dark:text-gray-900">Art & Literature</Link>
                             </div>
                             <div className="group relative flex items-center gap-x-6 p-4 text-sm/6 hover:bg-gray-100 hover:cursor-pointer">
-                                <Link to="/category/news" className="block font-semibold text-white dark:text-gray-900">News</Link>
+                                <Link to="/blog/category/4" className="block font-semibold text-white dark:text-gray-900">News</Link>
                             </div>
                         </div>
                     </div>
