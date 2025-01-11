@@ -10,3 +10,9 @@ export interface ProductDto {
     excerpt?: string;
     description?: string;
 }
+
+export interface CartItemDto {
+    id: string;
+    product: ProductDto;
+    quantity: number;
+}

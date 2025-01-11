@@ -7,6 +7,8 @@ import {
     ShoppingBagOutlined
 } from "@mui/icons-material";
 import "./Header.scss";
+import { ProfileDropdown } from "../Navbar/ProfileDropdown";
+import { CartDropdown } from "../Navbar/CartDropdown";
 
 export default function Header() {
     function toggleDropdown(name: string) {
@@ -118,25 +120,14 @@ export default function Header() {
                             <ShoppingBagOutlined className="text-gray-200 hover:text-pink-500" />
                             <span className="absolute bottom-3 left-4 py-1 px-2 bg-pink-500 rounded-full text-xs font-bold">0</span>
                         </div>
-                        <div className="hidden flex flex-col absolute w-52 -left-10 top-full z-10 mt-3 overflow-hidden rounded bg-white shadow-lg dropdown-menu dropdown-cart">
-                            <div className="wishlist-item flex justify-between items-center p-1">
-                                <div className="w-1/2 flex flex-col justify-center items-center text-slate-600">
-                                    <span className="text-sm/6 font-semibold">Book Title</span>
-                                    <span className="text-xs/6 font-semibold">$5</span>
-                                </div>
-                            </div>
-                            <div className="wishlist-total flex justify-between items-center">
-                                <div className="w-1/2 py-2 bg-slate-900 hover:bg-slate-700 flex justify-center items-center text-sm font-semibold text-white cursor-pointer">
-                                    View
-                                </div>
-                                <div className="w-1/2 py-2 bg-pink-600 hover:bg-pink-500 flex justify-center items-center text-sm font-semibold text-white cursor-pointer">
-                                    Checkout
-                                </div>
-                            </div>
-                        </div>
+                        <CartDropdown />
                     </div>
-                    <div className="flex items-center relative cursor-pointer">
-                        <PersonOutlineOutlined className="text-gray-200 hover:text-pink-500" />
+                    <div className="flex items-center relative">
+                        <PersonOutlineOutlined 
+                            className="text-gray-200 hover:text-pink-500 cursor-pointer" 
+                            onClick={() => toggleDropdown("dropdown-profile")} 
+                        />
+                        <ProfileDropdown />
                     </div>
                     <div className="flex items-center justify-between rounded-full bg-pink-500 p-1 cursor-pointer" onClick={openSearchBar}>
                         <span className="hidden text-xs text-white px-2 search-bar">Search...</span>
