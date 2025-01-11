@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CartItemDto } from "../models/product";
 import { products } from "../services/dummy";
 
-export function useGetCartItems(pageLimit: number) {
+export function useGetCartItems(pageLimit?: number) {
     const [cartItems, setCartItems] = useState<CartItemDto[]>([]);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -14,7 +14,8 @@ export function useGetCartItems(pageLimit: number) {
                 product,
                 quantity: 1,
             }));
-            setCartItems(cartItems.slice(0, pageLimit));
+            const limit = pageLimit || cartItems.length;
+            setCartItems(cartItems.slice(0, limit));
             setIsLoading(false);
         }, 1000);
     };
@@ -68,5 +69,6 @@ export function useGetCartItems(pageLimit: number) {
         clearCart,
         totalPrice,
         isLoadingCart,
+        cartItemCount: cartItems.length,
     };
 }

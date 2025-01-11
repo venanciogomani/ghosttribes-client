@@ -9,8 +9,11 @@ import {
 import "./Header.scss";
 import { ProfileDropdown } from "../Navbar/ProfileDropdown";
 import { CartDropdown } from "../Navbar/CartDropdown";
+import { useGetCartItems } from "../../../hooks/use-get-cart-items";
 
 export default function Header() {
+    const { cartItemCount } = useGetCartItems();
+
     function toggleDropdown(name: string) {
         const dropdownMenus = document.querySelectorAll(".dropdown-menu");
         const dropdownMenu = document.querySelector(`.${name}`);
@@ -118,7 +121,7 @@ export default function Header() {
                     <div className="flex items-center relative">
                         <div className="flex items-center relative cursor-pointer" onClick={() => toggleDropdown("dropdown-cart")}>
                             <ShoppingBagOutlined className="text-gray-200 hover:text-pink-500" />
-                            <span className="absolute bottom-3 left-4 py-1 px-2 bg-pink-500 rounded-full text-xs font-bold">0</span>
+                            <span className="absolute bottom-3 left-4 py-1 px-2 bg-pink-500 rounded-full text-xs font-bold">{cartItemCount}</span>
                         </div>
                         <CartDropdown />
                     </div>
