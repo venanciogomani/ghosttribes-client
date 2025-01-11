@@ -21,12 +21,7 @@ export function ProductPlacement({
                 {data.map(product => (
                     <ProductCard
                         key={product.id}
-                        id={product.id}
-                        title={product.title}
-                        img={product.img[0]}
-                        price={product.price}
-                        oldPrice={product.oldPrice}
-                        isNew={product.isNew}
+                        product={product}
                     />
                 ))}
             </div>

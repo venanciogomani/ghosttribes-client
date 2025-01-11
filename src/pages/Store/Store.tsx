@@ -83,12 +83,7 @@ export default function Store() {
                         {data.map((product) => (
                             <ProductCard 
                                 key={product.id}
-                                id={product.id}
-                                title={product.title}
-                                oldPrice={product.oldPrice}
-                                price={product.price}
-                                img={product.img[0]}
-                                isNew={product.isNew}
+                                product={product}
                             />
                         )).slice(0, page)}
                     </div>

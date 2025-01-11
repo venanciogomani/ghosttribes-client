@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { CartItemDto } from "../models/product";
-import { products } from "../services/dummy";
+import { CartItemDto, ProductDto } from "../models/product";
+import { cartProducts } from "../services/dummy";
 
 export function useGetCartItems(pageLimit?: number) {
     const [cartItems, setCartItems] = useState<CartItemDto[]>([]);
@@ -9,7 +9,7 @@ export function useGetCartItems(pageLimit?: number) {
     const fetchCartItems = async () => {
         setIsLoading(true);
         setTimeout(() => {
-            const cartItems: CartItemDto[] = products.map((product) => ({
+            const cartItems: CartItemDto[] = cartProducts.map((product) => ({
                 id: Math.random().toString(36).substr(2, 9),
                 product,
                 quantity: 1,
@@ -22,22 +22,22 @@ export function useGetCartItems(pageLimit?: number) {
 
     useEffect(() => {
         fetchCartItems();
-    }, [pageLimit]);
+    }, []);
 
-    const addToCart = (productId: number, quantity: number) => {
+    const addToCart = (product: ProductDto, quantity: number) => {
         // Simulate adding item to cart
-        const existingItem = cartItems.find((item) => item.product.id === productId);
+        const existingItem = cartItems.find((item) => item.product.id === product.id);
         if (existingItem) {
             existingItem.quantity += quantity;
         } else {
-            const product = products.find((product) => product.id === productId);
             if (product) {
                 const cartItem: CartItemDto = {
                     id: Math.random().toString(36).substr(2, 9),
                     product,
                     quantity,
                 };
-                setCartItems([...cartItems, cartItem]);
+                const newCartItems = [...cartItems, cartItem];
+                setCartItems(newCartItems);
             }
         }
     };

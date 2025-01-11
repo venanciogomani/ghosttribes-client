@@ -28,15 +28,10 @@ export default function ProductsCarousel(
                 )}
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full mt-4">
-                {data.map((product) => (
+                {data.map((product, index) => (
                     <ProductCard 
-                        key={product.id}
-                        id={product.id}
-                        title={product.title}
-                        oldPrice={product.oldPrice}
-                        price={product.price}
-                        img={product.img[0]}
-                        isNew={product.isNew}
+                        key={index}
+                        product={product}
                     />
                 )).slice(0, pageLimit)}
             </div>
